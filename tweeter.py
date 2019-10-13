@@ -17,16 +17,17 @@ window_height = 200 # y
 #-ツイート格納リスト-#
 tweets = []
 
+# Twitter APIキー
 consumer_key='CONSUMER_KEY'
 consumer_secret='CONSUMER_SECRET'
 access_key='ACCESS_KEY'
-access_secret='54Dqdt8Kx7CoVKq2XqOSoTsKkTI7liPtpPugaZjGrTbRK'
+access_secret='ACCESS_SECRET'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth_handler=auth)
 
-#-検索ワード-#
+#-検索ワード-#   ↓キーワード
 trend_name = "最初の言語 exclude:retweets"
 textnum = 0
 
